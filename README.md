@@ -17,7 +17,7 @@
   <img src="screenshots/log-expense-modal.svg" alt="SpendPulse 1-Tap Logging with Over-Budget Alert" width="360" style="margin: 10px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
 </p>
 
-*(Tip: You can replace the files inside `screenshots/` with direct PNG screenshots from your phone at any time).*
+
 
 ---
 
