@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 820" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="820" rx="40" fill="url(#bgGrad2)" stroke="#1e293b" stroke-width="4"/>
+  <rect x="145" y="14" width="110" height="24" rx="12" fill="#000000"/>
+
+  <!-- Dimmed background dashboard -->
+  <rect x="0" y="44" width="400" height="776" fill="#000000" fill-opacity="0.6"/>
+
+  <!-- Bottom Sheet Modal -->
+  <g transform="translate(0, 160)">
+    <rect width="400" height="660" rx="32" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+    <rect x="175" y="12" width="50" height="4" rx="2" fill="#475569"/>
+
+    <!-- Header -->
+    <text x="24" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#ffffff">Log Expense</text>
+    <rect x="146" y="38" width="80" height="18" rx="9" fill="#4f46e5" fill-opacity="0.2" stroke="#6366f1" stroke-width="1"/>
+    <text x="186" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#a5b4fc" text-anchor="middle">1-TAP ENTRY</text>
+    
+    <text x="24" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Safe daily balance left: <tspan fill="#34d399" font-weight="bold">₹1,140</tspan></text>
+    <circle cx="366" cy="48" r="14" fill="#1e293b"/>
+    <text x="366" y="53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#94a3b8" text-anchor="middle">✕</text>
+
+    <!-- Over-budget live warning preview -->
+    <g transform="translate(24, 92)">
+      <rect width="352" height="46" rx="12" fill="#450a0a" fill-opacity="0.7" stroke="#ef4444" stroke-width="1"/>
+      <text x="14" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" fill="#fca5a5">⚠️ BUDGET NOTICE</text>
+      <text x="14" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#fecaca">Logging over ₹1,140 triggers an instant notification alert.</text>
+    </g>
+
+    <!-- Amount Input -->
+    <g transform="translate(24, 154)">
+      <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">AMOUNT SPENT (₹)</text>
+      <rect y="24" width="352" height="56" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+      <text x="20" y="62" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="800" fill="#818cf8">₹</text>
+      <text x="44" y="62" font-family="'JetBrains Mono', monospace" font-size="28" font-weight="800" fill="#ffffff">350</text>
+      
+      <!-- Preset Chips -->
+      <g transform="translate(0, 92)">
+        <rect x="0" width="52" height="26" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="26" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">+₹50</text>
+        
+        <rect x="58" width="56" height="26" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="86" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">+₹100</text>
+        
+        <rect x="120" width="56" height="26" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="148" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">+₹200</text>
+        
+        <rect x="182" width="56" height="26" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="210" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">+₹500</text>
+
+        <rect x="244" width="62" height="26" rx="8" fill="#1e293b" stroke="#334155"/>
+        <text x="275" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">+₹1000</text>
+      </g>
+    </g>
+
+    <!-- Category Selector (Needs vs Fun) -->
+    <g transform="translate(24, 290)">
+      <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">CATEGORY BUCKET</text>
+      <text x="352" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a5b4fc" text-anchor="end">Both deduct from daily</text>
+
+      <!-- Needs Selected Card -->
+      <rect y="26" width="170" height="52" rx="14" fill="#083344" stroke="#06b6d4" stroke-width="1.5"/>
+      <text x="16" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#67e8f9">🏠 Needs &amp; Bills</text>
+      <text x="16" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8">Groceries, Fuel, Meds</text>
+
+      <!-- Fun Card -->
+      <rect x="182" y="26" width="170" height="52" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="198" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#cbd5e1">🎉 Fun &amp; Wants</text>
+      <text x="198" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" fill="#94a3b8">Dining, Cafes, Outings</text>
+    </g>
+
+    <!-- Payment Rail (UPI Highlight) -->
+    <g transform="translate(24, 386)">
+      <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">PAYMENT RAIL</text>
+      <text x="352" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#34d399" text-anchor="end">⚡ UPI Sync Ready</text>
+
+      <rect y="26" width="82" height="34" rx="10" fill="#4f46e5" stroke="#6366f1"/>
+      <text x="41" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">⚡ UPI</text>
+
+      <rect x="90" y="26" width="82" height="34" rx="10" fill="#1e293b" stroke="#334155"/>
+      <text x="131" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">Card</text>
+
+      <rect x="180" y="26" width="82" height="34" rx="10" fill="#1e293b" stroke="#334155"/>
+      <text x="221" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">Cash</text>
+
+      <rect x="270" y="26" width="82" height="34" rx="10" fill="#1e293b" stroke="#334155"/>
+      <text x="311" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">NetBank</text>
+    </g>
+
+    <!-- Submit Button -->
+    <g transform="translate(24, 468)">
+      <rect width="352" height="52" rx="16" fill="url(#btnGrad)" filter="drop-shadow(0px 8px 16px rgba(79, 70, 229, 0.4))"/>
+      <text x="176" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle">✓ Confirm &amp; Deduct from Daily Budget</text>
+    </g>
+  </g>
+</svg>

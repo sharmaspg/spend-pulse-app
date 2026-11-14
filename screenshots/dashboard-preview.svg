@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 820" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="heroDial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Phone Shell Background -->
+  <rect width="400" height="820" rx="40" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Dynamic Island -->
+  <rect x="145" y="14" width="110" height="24" rx="12" fill="#000000"/>
+
+  <!-- Top App Header -->
+  <g transform="translate(24, 52)">
+    <rect width="36" height="36" rx="10" fill="url(#primaryGrad)"/>
+    <text x="18" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">✨</text>
+    <text x="46" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="800" fill="#ffffff">SpendPulse</text>
+    <rect x="140" y="8" width="46" height="16" rx="8" fill="#4f46e5" fill-opacity="0.2" stroke="#6366f1" stroke-width="1"/>
+    <text x="163" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#a5b4fc" text-anchor="middle">PACER</text>
+    <text x="46" y="33" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Today, Nov 14</text>
+    
+    <!-- Ratio Pill -->
+    <rect x="270" y="6" width="78" height="24" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="309" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1" text-anchor="middle">40/30/30</text>
+  </g>
+
+  <!-- Main Hero Card (Safe to Spend Today) -->
+  <g transform="translate(20, 106)">
+    <rect width="360" height="210" rx="24" fill="#1e293b" fill-opacity="0.75" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">TODAY'S SAFE ALLOWANCE</text>
+    
+    <rect x="236" y="14" width="108" height="20" rx="10" fill="#10b981" fill-opacity="0.15" stroke="#10b981" stroke-width="1"/>
+    <text x="290" y="28" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#34d399" text-anchor="middle">✓ SAFE TO SPEND</text>
+
+    <!-- Big Remaining Value -->
+    <text x="18" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Remaining for Today</text>
+    <text x="18" y="98" font-family="'JetBrains Mono', monospace" font-size="36" font-weight="800" fill="#ffffff">₹1,140</text>
+
+    <!-- Sub Chips (Needs & Fun) -->
+    <rect x="18" y="112" width="78" height="18" rx="5" fill="#06b6d4" fill-opacity="0.15" stroke="#06b6d4" stroke-width="1"/>
+    <text x="57" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#67e8f9" text-anchor="middle">🏠 Needs: ₹350</text>
+
+    <rect x="102" y="112" width="70" height="18" rx="5" fill="#ec4899" fill-opacity="0.15" stroke="#ec4899" stroke-width="1"/>
+    <text x="137" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#f472b6" text-anchor="middle">🎉 Fun: ₹220</text>
+
+    <text x="18" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Daily Limit: <tspan fill="#f1f5f9" font-weight="bold">₹1,710</tspan></text>
+    <text x="110" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Spent: <tspan fill="#f59e0b" font-weight="bold">₹570</tspan></text>
+
+    <!-- Dial Gauge -->
+    <circle cx="285" cy="115" r="45" fill="none" stroke="#334155" stroke-width="8"/>
+    <circle cx="285" cy="115" r="45" fill="none" stroke="url(#heroDial)" stroke-width="8" stroke-dasharray="282" stroke-dashoffset="190" stroke-linecap="round" transform="rotate(-90 285 115)"/>
+    <text x="285" y="118" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="800" fill="#ffffff" text-anchor="middle">33%</text>
+    <text x="285" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" fill="#94a3b8" text-anchor="middle">used</text>
+
+    <line x1="18" y1="172" x2="342" y2="172" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="193" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#a5b4fc">✨ Safe to spend ₹1,140 more today across Needs &amp; Fun.</text>
+  </g>
+
+  <!-- Quick Stats (Allocatable Pool & Days Left) -->
+  <g transform="translate(20, 328)">
+    <rect width="174" height="64" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="16" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Allocatable Pool</text>
+    <text x="16" y="48" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#ffffff">₹51,300</text>
+
+    <rect x="186" y="0" width="174" height="64" rx="18" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="202" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Days Remaining</text>
+    <text x="202" y="48" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700" fill="#ffffff">17 <tspan font-size="11" fill="#94a3b8">of 30d</tspan></text>
+  </g>
+
+  <!-- Weekly Pacer Card -->
+  <g transform="translate(20, 404)">
+    <rect width="360" height="88" rx="20" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Weekly Pacer (7-Day Rolling)</text>
+    <text x="342" y="24" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38bdf8" text-anchor="end">₹6,850 left</text>
+    
+    <rect x="18" y="38" width="324" height="8" rx="4" fill="#334155"/>
+    <rect x="18" y="38" width="140" height="8" rx="4" fill="url(#primaryGrad)"/>
+
+    <text x="18" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">Spent: ₹4,120</text>
+    <text x="342" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8" text-anchor="end">Limit: ₹11,970</text>
+  </g>
+
+  <!-- Category Breakdown Progress Card -->
+  <g transform="translate(20, 504)">
+    <rect width="360" height="152" rx="20" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+    <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#94a3b8" letter-spacing="1">MONTHLY BREAKDOWN</text>
+    
+    <!-- Needs Bar -->
+    <text x="18" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#67e8f9">🏠 Needs (40%)</text>
+    <text x="342" y="48" font-family="'JetBrains Mono', monospace" font-size="10" fill="#cbd5e1" text-anchor="end">₹8,400 / ₹20,520</text>
+    <rect x="18" y="55" width="324" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="55" width="132" height="6" rx="3" fill="#06b6d4"/>
+
+    <!-- Fun Bar -->
+    <text x="18" y="80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#f472b6">🎉 Fun (30%)</text>
+    <text x="342" y="80" font-family="'JetBrains Mono', monospace" font-size="10" fill="#cbd5e1" text-anchor="end">₹4,200 / ₹15,390</text>
+    <rect x="18" y="87" width="324" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="87" width="88" height="6" rx="3" fill="#ec4899"/>
+
+    <!-- Savings Bar -->
+    <text x="18" y="112" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#34d399">💰 Savings (30%)</text>
+    <text x="342" y="112" font-family="'JetBrains Mono', monospace" font-size="10" fill="#34d399" font-weight="700" text-anchor="end">₹15,390 Protected</text>
+    <rect x="18" y="119" width="324" height="6" rx="3" fill="#334155"/>
+    <rect x="18" y="119" width="324" height="6" rx="3" fill="#10b981"/>
+
+    <!-- Fixed Obligations -->
+    <text x="18" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#f59e0b">💳 Fixed EMIs &amp; Rent: ₹33,700 (Deducted 1st)</text>
+  </g>
+
+  <!-- Bottom Navigation Bar -->
+  <g transform="translate(0, 746)">
+    <rect width="400" height="74" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+    
+    <text x="50" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#818cf8" text-anchor="middle">Today</text>
+    <text x="130" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Health</text>
+
+    <!-- Floating Center Add Button -->
+    <circle cx="200" cy="24" r="26" fill="url(#primaryGrad)" filter="drop-shadow(0px 8px 12px rgba(99, 102, 241, 0.4))"/>
+    <text x="200" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="400" fill="#ffffff" text-anchor="middle">+</text>
+
+    <text x="270" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Ratios</text>
+    <text x="350" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">Setup</text>
+  </g>
+</svg>

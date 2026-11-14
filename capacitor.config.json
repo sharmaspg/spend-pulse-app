@@ -1,0 +1,9 @@
+{
+  "appId": "com.spendpulse.budgetapp",
+  "appName": "SpendPulse",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
